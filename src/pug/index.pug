@@ -269,43 +269,42 @@ html(lang='en')
                 article#colors.my-3
                     .bd-heading.sticky-xl-top.align-self-start.mt-5.mb-3.mt-xl-0.mb-xl-2
                         h3 Colors
-                    div.d-flex
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#6667AB')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #6667AB
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#6A6DCD')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #6A6DCD
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#6F659C')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #6F659C
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#6050A8')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #6050A8
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#737397')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #737397
-                        .bd-example.m-0
-                            svg.bd-placeholder-img.img-thumbnail(width='200' height='200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200' preserveAspectRatio='xMidYMid slice' focusable='false')
-                                title
-                                    | A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera
-                                rect(width='100%' height='100%' fill='#6374A5')
-                                text(x='50%' y='50%' fill='#fff' dy='.3em') #6374A5
+                    div
+                        p Основные цвета
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#ffffff; border: 1px solid #6667AB; width:200px; height:200px;')
+                                p(style='color: #000') #ffffff
+                            p.ms-2 Основной цвет
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#6667AB; width:200px; height:200px;')
+                                p(style='color: #fff') #6667AB
+                            p.ms-2 Акцентрирующий цвет - обводка, выделение чего-либо, итд ...
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:rgba(102, 103, 171, 0.75); width:200px; height:200px;')
+                                p(style='color: #fff') rgba(102, 103, 171, 0.75)
+                            p.ms-2 Тот же цвет, 75% прозрачности
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:rgba(102, 103, 171, 0.5); width:200px; height:200px;')
+                                p(style='color: #fff') rgba(102, 103, 171, 0.5)
+                            p.ms-2 Тот же цвет, 50% прозрачности
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:rgba(102, 103, 171, 0.25); width:200px; height:200px;')
+                                p(style='color: #000') rgba(102, 103, 171, 0.25)
+                            p.ms-2 Тот же цвет, 25% прозрачности
+                        p Вспомогательные цвета
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#000000; width:100px; height:100px;')
+                                p(style='color: #fff') #000000
+                            p.ms-2 Цвет шрифта, цвет по умолчанию
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#198754; width:100px; height:100px;')
+                                p(style='color: #fff') #198754
+                            p.ms-2 Положительно пройденная валидация, кнопка для подтверждения
+                        .d-flex.align-items-center.mt-3
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#dc3545; width:100px; height:100px;')
+                                p(style='color: #fff') #dc3545
+                            p.ms-2 Не-пройденная валидация, кнопка для отказа, сообщение об ошибке
+
 
                 article#typography.my-3
                     .bd-heading.sticky-xl-top.align-self-start.mt-5.mb-3.mt-xl-0.mb-xl-2
