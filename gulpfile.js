@@ -86,7 +86,7 @@ function copyJs() {
 
 function jsVendor() {
     return gulp.src([
-        'src/libs/bootstrap/js/bootstrap.min.js',
+        'src/libs/bootstrap/js/bootstrap.bundle.min.js',
     ])
         .pipe(concat('vendor.js'))
         .pipe(uglify())
