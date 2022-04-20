@@ -24,6 +24,7 @@ const paths = {
         html: 'src/pug/*.pug',
         scripts: 'src/scripts/**/*',
         styles: 'src/styles/**/*.scss',
+        bootstrapSrc: 'src/libs/bootstrap/css/source/*.scss',
         image: 'src/image/**/*',
         images: 'src/images/**/*',
         fonts: 'src/fonts/**/*',
@@ -41,6 +42,7 @@ const paths = {
         html: 'www',
         scripts: 'www/assets/js',
         styles: 'www/assets/css',
+        bootstrapSrc: 'src/styles/bootstrap',
         image: 'www/assets/image',
         images: 'www/assets/images',
         fonts: 'www/assets/fonts',
@@ -61,12 +63,20 @@ function html() {
         .pipe(gulp.dest(paths.build.html));
 }
 
-function css() {
+function bootstrap() {
+    return gulp.src([paths.src.bootstrapSrc])
+        .pipe(sass())
+        .pipe(gulp.dest(paths.build.bootstrapSrc));
+}
+
+function cssSrc() {
     return gulp.src([paths.src.styles])
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(postcss([prefixer()]))
         .pipe(gulp.dest(paths.build.styles));
 }
+
+const css = gulp.series(bootstrap, cssSrc);
 
 function fonts() {
     return gulp.src(paths.src.fonts)

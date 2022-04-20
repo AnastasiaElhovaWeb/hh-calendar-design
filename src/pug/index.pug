@@ -23,9 +23,9 @@ html(lang='en')
                         button.btn.d-inline-flex.align-items-center.collapsed(data-bs-toggle='collapse' aria-expanded='false' data-bs-target='#contents-collapse' aria-controls='contents-collapse') Contents
                         ul#contents-collapse.list-unstyled.ps-3.collapse
                             li
-                                a.d-inline-flex.align-items-center.rounded(href='#calendar') Calendar
-                            li
                                 a.d-inline-flex.align-items-center.rounded(href='#colors') Colors
+                            li
+                                a.d-inline-flex.align-items-center.rounded(href='#fonts') Fonts
                             li
                                 a.d-inline-flex.align-items-center.rounded(href='#typography') Typography
                             li
@@ -95,185 +95,14 @@ html(lang='en')
         .bd-cheatsheet.container-fluid.bg-body
             section#content
                 h2.sticky-xl-top.fw-bold.pt-3.pt-xl-5.pb-2.pb-xl-3 Contents
-                article#calendar.my-3
-                    .bd-heading.sticky-xl-top.align-self-start.mt-5.mb-3.mt-xl-0.mb-xl-2
-                        h3 Calendar
-                    div
-                        .calendar
-                            table.table.table-bordered.table-calendar
-                                thead
-                                    tr
-                                        th(scope="col") #
-                                        th(scope="col") Sun 17/04
-                                        th(scope="col") Mon 18/04
-                                        th(scope="col") Tue 19/04
-                                        th(scope="col") Wed 20/04
-                                        th(scope="col") Thu 21/04
-                                        th(scope="col") Fri 22/04
-                                        th(scope="col") Sat 23/04
-                                tbody
-                                    tr
-                                        th.hour-field 10:00
-                                        td
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 10:30
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 11:00
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 11:30
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 12:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 12:30
-                                        td
-                                        td
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 13:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 13:30
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 14:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 14:30
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 15:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 15:30
-                                        td
-                                        td
-                                        td.calendar-fill
-                                        td.calendar-fill
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 16:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 16:30
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 17:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 17:30
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td.calendar-fill
-                                        td
-                                        td
-                                    tr
-                                        th.hour-field 18:00
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-                                        td
-
                 article#colors.my-3
                     .bd-heading.sticky-xl-top.align-self-start.mt-5.mb-3.mt-xl-0.mb-xl-2
                         h3 Colors
                     div
                         p Основные цвета
                         .d-flex.align-items-center.mt-3
-                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#ffffff; border: 1px solid #6667AB; width:200px; height:200px;')
-                                p(style='color: #000') #ffffff
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#f8f9fa; border: 1px solid #6667AB; width:200px; height:200px;')
+                                p(style='color: #000') #f8f9fa
                             p.ms-2 Основной цвет
                         .d-flex.align-items-center.mt-3
                             .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#6667AB; width:200px; height:200px;')
@@ -293,8 +122,8 @@ html(lang='en')
                             p.ms-2 Тот же цвет, 25% прозрачности
                         p Вспомогательные цвета
                         .d-flex.align-items-center.mt-3
-                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#000000; width:100px; height:100px;')
-                                p(style='color: #fff') #000000
+                            .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#333333; width:100px; height:100px;')
+                                p(style='color: #fff') #333333
                             p.ms-2 Цвет шрифта, цвет по умолчанию
                         .d-flex.align-items-center.mt-3
                             .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#198754; width:100px; height:100px;')
@@ -304,6 +133,47 @@ html(lang='en')
                             .bd-example.m-0.d-flex.align-items-center.justify-content-center(style='background-color:#dc3545; width:100px; height:100px;')
                                 p(style='color: #fff') #dc3545
                             p.ms-2 Не-пройденная валидация, кнопка для отказа, сообщение об ошибке
+
+                article#fonts.my-3
+                    .bd-heading.sticky-xl-top.align-self-start.mt-5.mb-3.mt-xl-0.mb-xl-2
+                        h3 Fonts
+                    div
+                        .bd-example
+                            p Ubud (для русского)
+                            p.h1(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h2(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h3(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h4(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h5(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h6(style='font-family:Ubud') Съешь же ещё этих мягких французских булок, да выпей чаю
+
+                        .bd-example
+                            p Ubud (для английского)
+                            p.h1(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            p.h2(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            p.h3(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            p.h4(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            p.h5(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            p.h6(style='font-family:Ubud') Lorem ipsum dolor sit amet, consectetur adipiscing elit
+
+                        .bd-example
+                            p Ubuntu
+                            p.h1(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h2(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h3(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h4(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h5(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h6(style='font-family:Ubuntu') Съешь же ещё этих мягких французских булок, да выпей чаю
+
+                        .bd-example
+                            p Roboto
+                            p.h1(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h2(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h3(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h4(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h5(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+                            p.h6(style='font-family:Roboto') Съешь же ещё этих мягких французских булок, да выпей чаю
+
 
 
                 article#typography.my-3
