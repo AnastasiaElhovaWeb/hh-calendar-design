@@ -10,14 +10,14 @@
   content: ""; }
 
 .link-primary {
-  color: #0d6efd; }
+  color: #6667AB; }
   .link-primary:hover, .link-primary:focus {
-    color: #0a58ca; }
+    color: #525289; }
 
 .link-secondary {
-  color: #6c757d; }
+  color: #A0957D; }
   .link-secondary:hover, .link-secondary:focus {
-    color: #565e64; }
+    color: #b3aa97; }
 
 .link-success {
   color: #198754; }
@@ -357,10 +357,10 @@
   border-left: 0 !important; }
 
 .border-primary {
-  border-color: #0d6efd !important; }
+  border-color: #6667AB !important; }
 
 .border-secondary {
-  border-color: #6c757d !important; }
+  border-color: #A0957D !important; }
 
 .border-success {
   border-color: #198754 !important; }
